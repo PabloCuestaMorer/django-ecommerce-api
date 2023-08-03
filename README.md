@@ -2,14 +2,22 @@
 
 This GitHub repository contains the code for an E-commerce API developed using **Django** and **Django Rest Framework (DRF)**. The API allows users to interact with an e-commerce system, enabling them to view and create items, place orders, and retrieve order details. It also includes authentication using **token-based authentication** to ensure that certain endpoints are accessible only to authenticated users.
 
-## Project Structure
+- E-Commerce API Overview
+  - [1. Project Structure](#1-project-structure)
+  - [2. Principal Endpoints](#2-principal-endpoints)
+  - [3. Important Commands](#3-important-commands)
+  - [4. Django administration](#4-django-administration)
+  - [5. API endpoints](#5-api-endpoints)
+  - [6. Conclusion](#6-conclusion)
+
+## 1. Project Structure
 
 The project is structured as follows:
 
 - **Core App**: Contains a contact endpoint and basic model serializers. It serves as a foundation for the e-commerce app.
 - **E-Commerce App**: Implements the main functionality of the e-commerce API, including item and order endpoints with proper permissions and serializer classes.
 
-## Principal Endpoints
+## 2. Principal Endpoints
 
 1. **Item Endpoint**:
    - URL: `/api/items/`
@@ -35,7 +43,7 @@ The project is structured as follows:
    - Authentication Required: Yes (Token-based)
    - Description: This endpoint allows users to retrieve details of a specific order by providing its UUID in the URL. Authentication is required to access this endpoint.
 
-## Important Commands
+## 3. Important Commands
 
 - **Running the Server**: To run the Django development server, navigate to the project root directory and execute the command `python manage.py runserver`. The API will be accessible at `http://localhost:8000`.
 
@@ -43,10 +51,10 @@ The project is structured as follows:
 
 - **Running Tests**: To execute the unit tests for both the core and e-commerce apps, use the command `python manage.py test`. The tests ensure that the endpoints and models are functioning correctly.
 
-## Django administration
+## 4. Django administration
 http://localhost:8000/admin/
 
-## API endpoints
+## 5. API endpoints
 
 - This retrieves the auth token for your_username:
 
@@ -91,8 +99,11 @@ http://localhost:8000/admin/
      http http://api:8000/contact/ name="Bobby Stearman" message="test" email="bobby@didcoding.com"
      ```
 
-## Conclusion
+## 6. Conclusion
 
 This E-commerce API project serves as a foundation for building more complex e-commerce applications. It demonstrates the implementation of token-based authentication, viewsets, serializers, and permission classes in Django Rest Framework. The project can be expanded and customized to suit specific e-commerce business requirements. Feel free to explore the code, run tests, and adapt it to your needs. If you have any questions or feedback, please leave a comment or open an issue in this repository.
 
 Thank you for using this E-commerce API! Happy coding!
+
+
+*By Pablo Cuesta Morer*
